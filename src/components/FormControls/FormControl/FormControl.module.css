@@ -1,0 +1,7 @@
+.feedback__invalid {
+    display: none;
+}
+
+.feedback__invalid.active {
+      display: block;
+}
