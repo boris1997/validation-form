@@ -1,10 +1,10 @@
 import Auxilary from '../../hoc/Auxilary'
-
+import classes from './Button.module.css'
 const Button = (props) => {
     console.log(props.btnStatus)
     return (
         <Auxilary>
-            <button disabled={props.btnStatus} >Зарегистрироваться</button>
+            <button className={classes.formButton} disabled={props.btnStatus} >Зарегистрироваться</button>
         </Auxilary>
     )
 }

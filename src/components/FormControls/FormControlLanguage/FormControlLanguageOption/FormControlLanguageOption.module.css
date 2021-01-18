@@ -1,0 +1,9 @@
+.option {
+     height: 2.75rem !important;
+     display: flex;
+     align-items: center;
+     padding-left: 1rem;
+}
+.option:hover {
+     background-color: #EBF4F8;
+}

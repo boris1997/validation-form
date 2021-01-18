@@ -1,0 +1,50 @@
+
+.conditionsControl {
+display: flex;
+align-items: center;
+margin-top: 2rem;
+}
+
+ .checkbox {
+   /*  padding: 0;
+    margin-bottom: 0; */
+    display: none;
+    cursor: pointer;
+}
+ .checkboxLabel {
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+ .checkboxLabel:before {
+    content: '';
+    -webkit-appearance: none; 
+    background-color: transparent;
+  background: #FFFFFF;
+  border: 0.06rem solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 0.25rem 0.5rem rgba(44, 39, 56, 0.04);
+  border-radius: 0.25rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 0.22rem;
+}
+
+ .checkbox:checked+.checkboxLabel:before {
+     border: 0.13rem solid #0880AE;
+     background: url('../../../assets/arrow.svg') no-repeat center;
+background-size: 1.1rem;
+ }
+
+ .conditionTitle {
+     margin-left: 0.3rem;
+     font-weight: 500;
+     color: #756F86;
+ }
+
+/*   */

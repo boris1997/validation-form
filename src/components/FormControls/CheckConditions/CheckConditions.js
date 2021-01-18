@@ -1,10 +1,11 @@
 import React from 'react'
-
-function CheckConditions() {
+import classes from './CheckConditions.module.css'
+const CheckConditions = (props) => {
     return (
-        <div>
-            <input type="checkbox" />
-            <p>Принимаю условия использования</p>
+        <div className={classes.conditionsControl} >
+            <input id='check' className={classes.checkbox} onChange={props.checked} type="checkbox" />
+            <label className={classes.checkboxLabel} htmlFor='check'></label>
+            <div className={classes.conditionTitle}>Принимаю <a href="#">условия</a>  использования</div>
         </div>
     )
 }

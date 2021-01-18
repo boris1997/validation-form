@@ -1,0 +1,17 @@
+.header {
+
+}
+
+.title {
+    color: #2C2738;
+    font-size: 2.13rem;
+    font-weight:700;
+}
+.login {
+    margin-top: 0.4rem;
+    display: flex;
+}
+
+.loginLink {
+    margin-left: 0.35rem;
+}
