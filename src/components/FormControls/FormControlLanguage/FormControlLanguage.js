@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react'
+import React from 'react'
 import FormControlLanguageOption from './FormControlLanguageOption/FormControlLanguageOption'
 import classes from '../FormControl/FormControl.module.css'
 import classesLg from './FormControlLanguage.module.css'
@@ -11,14 +11,12 @@ const FormControlLanguage = (props) => {
         4: "Испанский"
     }
 
-    console.log(props.dataActive)
-
 
     return (
         <div className={[classes.formControl, classesLg.formControl].join(' ')}>
             <label className={classes.formControlLabel} htmlFor="Язык">Язык</label>
             <div onClick={props.showData} className={[classes.formControlInput, classesLg.formControlInput].join(' ')} id="" name="">
-                <span className={(props.dataActive.length > 0 || props.language !== 'Язык') && classesLg.success}>{props.language}</span>
+                <span className={(props.dataActive.length > 0 || props.language !== 'Язык') ? classesLg.success : null}>{props.language}</span>
                 {/*  <option value="Русский">Русский</option>
                 <option value="Английкий">Английкий</option>
                 <option value="Китайский">Китайский</option>

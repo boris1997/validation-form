@@ -7,8 +7,6 @@ import classes from './FormControls.module.css'
 
 const FormControls = (props) => {
 
-    console.log(props)
-
     return (
         <form className={classes.formControls}>
             <FormControl nameInvalid={props.nameInvalid} changed={props.validateName} title='Имя' name='name' placeholder="Введите Ваше имя" />

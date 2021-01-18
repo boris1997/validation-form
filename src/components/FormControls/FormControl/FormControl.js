@@ -1,9 +1,6 @@
-/* import classes from '*.module.css' */
-/* import classes from '*.module.css' */
 import classes from './FormControl.module.css'
 
 function FormControl(props) {
-    console.log(props)
     return (
         <div className={classes.formControl}>
             <label className={classes.formControlLabel}>
